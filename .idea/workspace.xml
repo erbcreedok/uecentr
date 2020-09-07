@@ -22,11 +22,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,6 +48,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,11 +68,12 @@
       <workItem from="1520433560166" duration="62000" />
       <workItem from="1575024782993" duration="385000" />
       <workItem from="1583858549111" duration="666000" />
+      <workItem from="1599482089997" duration="4149000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -91,5 +96,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599298272182" />
+    <state x="339" y="139" width="602" height="522" key="find.popup" timestamp="1599482723847">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="339" y="139" width="602" height="522" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1599482723847" />
   </component>
 </project>

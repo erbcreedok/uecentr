@@ -23,13 +23,16 @@
                         <li class="list_main_li"  target="1">
                             <a class="a_nonebasic title">Услуги</a>
                         </li>
-                        <li class="list_main_li" target="2">
-                            <a class="a_nonebasic title">Разрешительные документы</a>
+                        <li class="list_main_li"  target="2">
+                            <a class="a_nonebasic title">Курсы</a>
                         </li>
                         <li class="list_main_li" target="3">
-                            <a class="a_nonebasic title">Нормативная база</a>
+                            <a class="a_nonebasic title">Разрешительные документы</a>
                         </li>
                         <li class="list_main_li" target="4">
+                            <a class="a_nonebasic title">Нормативная база</a>
+                        </li>
+                        <li class="list_main_li" target="5">
                             <a class="a_nonebasic title">Документация</a>
                             <ul class="list_child">
                                 <li class="list_child_li"><a class="a_nonebasic subtitle">Форма заявки</a></li>
@@ -37,7 +40,7 @@
                                 <li class="list_child_li"><a class="a_nonebasic subtitle" onclick="openform('callback')">Отправить заявку</a></li>
                             </ul>
                         </li>
-                        <li class="list_main_li" target="5">
+                        <li class="list_main_li" target="6">
                             <a class="a_nonebasic title">Контакты</a>
                         </li>
                     </ul>
@@ -174,7 +177,67 @@
                         </div>
                     </div>
                 </div>
-                <div class="section section_docs" target="2" style="background-image: url(content/stripe.png)">
+                <div class="section section_courses" target="2">
+                    <h1 class="section_head">Курсы</h1>
+                    <div class="subsection" target="0">
+                        <div class="waitappear appearonce box" style="background-image: url(content/courses_audit.jpg); width: 100%">
+                            <div class="box_back"></div>
+                            <div class="box_data">
+                                <p class="box_heading">Теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3</p>
+                                <div class="scroll_box">
+                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-audit">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="waitappear appearonce box" style="background-image: url(content/courses_pto.jpg)">
+                            <div class="box_back"></div>
+                            <div class="box_data">
+                                <p class="box_heading">Инженер ПТО в Строительстве</p>
+                                <div class="scroll_box">
+                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-pto">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="waitappear appearonce box" style="background-image: url(content/courses_tech.jpg)">
+                            <div class="box_back"></div>
+                            <div class="box_data">
+                                <p class="box_heading">Технический надзор</p>
+                                <div class="scroll_box">
+                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-tech">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="waitappear appearonce box" style="background-image: url(content/courses_smeta.jpg)">
+                            <div class="box_back"></div>
+                            <div class="box_data">
+                                <p class="box_heading">Сметное дело. АВС4</p>
+                                <div class="scroll_box">
+                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-smeta">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="waitappear appearonce box" style="background-image: url(content/courses_construction.jpg)">
+                            <div class="box_back"></div>
+                            <div class="box_data">
+                                <p class="box_heading">Технология строительства</p>
+                                <div class="scroll_box">
+                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-construction">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section_docs" target="3" style="background-image: url(content/stripe.png)">
                     <h1 class="section_head">Разрешительные документы</h1>
                     <div class="certificates">
                         <div class="certificate">
@@ -203,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section section_docs" target="3" style="background-image: url(content/stripe.png)">
+                <div class="section section_docs" target="4" style="background-image: url(content/stripe.png)">
                     <h1 class="section_head">Нормативная база</h1>
                     <ul class="documents">
                         <li>
@@ -288,7 +351,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section section_docs" target="4" style="background-image: url(content/stripe.png)">
+                <div class="section section_docs" target="5" style="background-image: url(content/stripe.png)">
                     <h1 class="section_head">Обратная связь</h1>
                     <div class="doc_box_container">
                         <a onclick="openform('offers')">
@@ -434,7 +497,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="section section_contacts" target="5">
+                <div class="section section_contacts" target="6">
                     <h1 class="section_head">Контакты</h1>
                     <div class="subsection">
                         <p class="contactp"><i class="fa fa-industry"></i>ТОО «Учебно-экспертный центр»</p>
@@ -727,6 +790,244 @@
                     </ul>
                     <p>Техническое освидетельствование кранов, отработавших нормативный срок службы, проводится после их обследования экспертной организацией.</p>
                     <p>Грузоподъемные краны, отработавшие нормативный срок службы, подвергаются специальному обследованию (диагностике) на предмет продления срока службы экспертными организациями.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-courses-audit">
+            <div class="modal-background" data-dismiss="modal"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-header-title">План проведения занятий по курсу: теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3 
+                    </p>
+                    <button class="modal-close">
+                        <i class="fa fa-close" data-dismiss="modal"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Основы бухгалтерского учета (типовой план счетов, составление проводок)</li>
+                        <li>Определение остатка. Решение задач</li>
+                        <li>Синтетические и аналитические счета</li>
+                        <li>Ведение первичных документов (ПКО, РКО, командировочное удостоверение, авансовый отчет)</li>
+                        <li>Начисление заработной платы. Учет налоговых обязательств (ИПН, социальные отчисления, социальный налог, начисление алиментов, отпускных, больничные листы)</li>
+                        <li>Учет денежных средств (касса, банк)</li>
+                        <li>Учет расчетов с физическими и юридическими лицами</li>
+                        <li>Учет запасов</li>
+                        <li>Учет основных средств и нематериальных активов</li>
+                        <li>Определение дохода</li>
+                        <li>Износ ОС</li>
+                        <li>Инвентаризация</li>
+                        <li>Учет инвестиций (обзор)</li>
+                        <li>Бухгалтерский баланс</li>
+                        <li>Налогобложение (100, 200, 300, 700, 910 формы)</li>
+                        <li>1С Бухгалтерия 8.3</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-courses-pto">
+            <div class="modal-background" data-dismiss="modal"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-header-title">Инженер ПТО в строительстве</p>
+                    <button class="modal-close">
+                        <i class="fa fa-close" data-dismiss="modal"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Программа «Профессионал»</strong></p>
+                    <p><strong>Продолжительность: </strong>20 часов </p>
+                    <p><strong>Краткое описание курса:</strong></p>
+                    <p>Миссия, цели и задачи ПТО в строительстве</p>
+                    <p>Должностные обязанности инженера ПТО в строительстве</p>
+                    <p>Взаимодействие ПТО с Заказчиком, Авторским и Техническим надзорами</p>
+                    <p>Взаимодействие ПТО с другими подразделениями (ИТР, ОГС, ОМТС, ОТиЗ, ЮО)</p>
+                    <p>Нормативно-технические акты РК в области строительства</p>
+                    <p>Основные разделы ПСД, процедура получения и правила проверки ПСД</p>
+                    <p>Процедура оформления, утверждения в производство работ и выдачи ПСД на объект</p>
+                    <p>Процедура пересогласования и повторная выдача ПСД в процессе строительства</p>
+                    <p>Основные этапы и последовательность этапов строительства</p>
+                    <p>Состав Исходно-разрешительной и Технической документации объекта</p>
+                    <p>Разделы и состав Исполнительной документации (ИД), реестр ИД</p>
+                    <p>Понятие и виды Лимитно-заборных карт (ЛЗК) по заявкам, списанию, работам Прием-сдача Выполнения, состав документов, реестр выполнения</p>
+                    <p>Понятие и виды Акта приемки выполненных работ (АВР) (формы 2Б и 2В</p>
+                    <p>Понятие и назначение Справки объемов выполненных работ</p>
+                    <p>Понятие и назначение Справки о стоимости выполненных работ и затрат</p>
+                    <p>Понятие и виды Календарных графиков в строительстве</p>
+                    <p>Правила составления Графика производства работ (ГПР)</p>
+                    <p>Правила составления Графика движения рабочей силы (ГДР)</p>
+                    <p>Правила составления Графика движения машин и механизмов (ГДМ)</p>
+                    <p>Понятие Товарно-материальные ценности (ТМЦ), группы ТМЦ</p>
+                    <p>Понятия Основные материалы и Расходные материалы (расходники)</p>
+                    <p>Понятие Малоценные средства производства (малоценка) и СИЗ</p>
+                    <p>Понятия Средства малой механизации, Инструменты, Спецоснастка, Инвентарь</p>
+                    <p>Понятия и расчет Норм расхода основных и расходных материалов</p>
+                    <p>Понятие и расчет Лимитов расхода малоценки, инструментов, инвентаря, СИЗ</p>
+                    <p>Понятие и расчет требуемого объема и оборачиваемости спецоснастки</p>
+                    <p>Понятия Заявка на закуп ТМЦ и Набор работ по объекту, составление заявки</p>
+                    <p>Плановые и внеплановые заявки на закуп ТМЦ с учетом норм расхода и потерь</p>
+                    <p>Понятие Списание ТМЦ, виды документов по списанию, составление и проверка М-29</p>
+                    <p>Акт списания механизмов, малоценки, инструментов, спецоснастки, инвентаря, СИЗ</p>
+                    <p>Понятия и формы Дефектного акта и Акта контрольного обмера, правила составления</p>
+                    <p>Процедуры и состав документации при сдаче и вводе объекта в эксплуатацию</p>
+                    <p>Понятия Коэффициент трудового участия (КТУ), область применения</p>
+                    <p>Понятия Единица объема работ и Единица учета материалов, область применения</p>
+                    <p>Правило десятичной запятой, порядок определения и область применения</p>
+                    <p>Понятия Цена единицы работ и Коэффициент удорожания, область применения</p>
+                    <p>Договор возмездного оказания услуг: основные разделы, область применения</p>
+                    <p>Договор субподряда: виды, основные разделы, состав приложений</p>
+                    <p>Договор поставки ТМЦ: виды, основные разделы, состав приложений</p>
+                    <p>Договор аренды техники: виды, основные разделы, состав приложений</p>
+                    <p>Проект производства работ (ППР), основные разделы, правила составления</p>
+                    <p>Виды тендеров, электронные тендерные площадки, правила проведения и участия</p>
+                    <p>Тендерные требования к поставщику, состав тендерной документации</p>
+                    <p>Практическое занятие 1: разбор сметы, порядок расчета сметной стоимости </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-courses-smeta">
+            <div class="modal-background" data-dismiss="modal"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-header-title">Сметное дело. АВС4</p>
+                    <button class="modal-close">
+                        <i class="fa fa-close" data-dismiss="modal"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>План проведения занятий по курсам сметы, программы ABC-4</strong></p>
+                    <ol>
+                        <li>Теоретическая часть. Основные понятия</li>
+                        <ul>
+                            <li>Сметная стоимость строительства</li>
+                            <ul>
+                                <li>Объект строительства</li>
+                                <li>Пусковой комплекс</li>
+                                <li>Очередь строительства</li>
+                                <li>Стройка</li>
+                            </ul>
+                        </ul>
+                        <li>Основные принципы определения сметной стоимости строительства</li>
+                        <li>Правила составления сметной документации</li>
+                        <ul>
+                            <li>Локальные сметы</li>
+                            <li>Локальные сметные расчеты</li>
+                            <li>Объектные сметы</li>
+                            <li>Объектные сметные расчеты</li>
+                            <li>Объектные сметы</li>
+                            <li>Сводные сметные расчеты стоимости строительства</li>
+                            <li>Состав сметной документации</li>
+                            <li>Составление локальной сметы</li>
+                            <ul>
+                                <li>Работа по СНиР. Поиск нужного вида работы.</li>
+                                <li>Расчет материалов. Расчет стоимости работы за одну единицу, расчет всего по количеству, расчет накладных расходов, затраты труда рабочих строителей и рабочих обслуживающих машины</li>
+                                <li>Расчет прямых затрат</li>
+                            </ul>
+                            <li>Дополнительные затраты, расчет дополнительных затрат. Работа по сборникам Сметные затраты на строительство временных зданий и сооружений, сборник сметных норм дополнительных затрат при производстве строительно-монтажных работ в зимнее время. СН РК 8.02-07-2002 4.</li>
+                        </ul>
+                    </ol>
+                    <p>Программа ABC-4</p>
+                    <ul>
+                        <li>Знакомство с главным меню</li>
+                        <li>Список файлов</li>
+                        <li>Знакомство с информационном обеспечением</li>
+                        <li>Понятия форма 1, 3, 4, КС3, 2В</li>
+                        <li>Составление локальной сметы</li>
+                        <li>Работа со сметой в экранном редакторе</li>
+                        <li>Работа с ресурсами а) удалить ресурс в) заменить ресурс с) добавить ресурс d)включить отдельной позицией e)присвоить метру f ) изменить стоимость материала</li>
+                        <li>Числовые кодификаторы</li>
+                        <li>Сводные сметные расчеты стоимости строительства</li>
+                        <li>Акт выполненных работ</li>
+                        <li>Подготовка работ к отчету</li>
+                        <li>Контрольная итоговая работа по дефектному акту.</li>
+                        <li>Ресурсный метод.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-courses-construction">
+            <div class="modal-background" data-dismiss="modal"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-header-title">Технология строительства</p>
+                    <button class="modal-close">
+                        <i class="fa fa-close" data-dismiss="modal"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Продолжительность: </strong>12 часов (6 занятия по 2 часа) </p>
+                    <p><strong>Краткое описание курса:</strong></p>
+                    <p>Основные разделы ПСД</p>
+                    <p>Основные этапы и последовательность этапов строительства</p>
+                    <p>Строительный генеральный план (СГП)</p>
+                    <p>Производство подготовительных работ на объекте согласно СГП </p>
+                    <ul>
+                        <li>Подготовительные и земляные работы</li>
+                        <li>Свайные фундаменты. Технология устройства</li>
+                        <li>Монолитные и сборные фундаменты. Виды и технология устройства</li>
+                        <li>Подвалы и цокольные этажи. Технология устройства</li>
+                        <li>Конструктивные схемы зданий и сооружений</li>
+                        <li>Технология устройства монолитных конструкций</li>
+                        <li>Технология монтажа сборных железобетонных конструкций</li>
+                        <li>Технология монтажа металлических конструкций</li>
+                        <li>Технология устройства кирпичных конструкций</li>
+                        <li>Технология устройства кровли. Виды кровли</li>
+                        <li>Технология устройства полов. Виды полов</li>
+                        <li>Технология устройства фасадов. Виды фасадов</li>
+                        <li>Технология внутренних отделочных работ</li>
+                        <li>Технология устройства подвесных потолков. Виды потолков</li>
+                        <li>Наружные инженерные сети. Виды и технология монтажа</li>
+                    </ul>
+                    <p>Внутренние инженерные сети. Виды и технология монтажа</p>
+                    <p>Благоустройство, озеленение и малые архитектурные формы (МАФы)</p>
+                    <p>Техника безопасности при производстве СМР</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-courses-tech">
+            <div class="modal-background" data-dismiss="modal"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-header-title">Курс технический надзор</p>
+                    <button class="modal-close">
+                        <i class="fa fa-close" data-dismiss="modal"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong>Основы работы технического надзора  и его должностные обязанности и функции.</strong>
+                    <ol>
+                        <li>Подготавливать исходно -  разрешительную  документацию</li>
+                        <li>Оформлять и утверждать ПСД</li>
+                        <li>Согласование и пересогласование рабочего проекта</li>
+                        <li>Изучите общие требования СНиП РК к приемке выполненных СМР т.е. разбор нормативно-технические документы.</li>
+                        <li>Изучите форму 2В ( акты по СМР), ЛЗК по выполненным работам, акты на промежуточные работы, акты на освидетельствование выполненных скрытых работ.</li>
+                        <li>Научитесь заполнять отчетность технадзора, сдача и ввод в эксплуатацию  законченного объекта.</li>
+                    </ol>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-blue modal-btn" data-dismiss="modal">
