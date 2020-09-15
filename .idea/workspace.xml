@@ -28,6 +28,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +69,8 @@
       <workItem from="1520433560166" duration="62000" />
       <workItem from="1575024782993" duration="385000" />
       <workItem from="1583858549111" duration="666000" />
-      <workItem from="1599482089997" duration="4149000" />
+      <workItem from="1599482089997" duration="4281000" />
+      <workItem from="1600159898847" duration="481000" />
     </task>
     <servers />
   </component>

@@ -1,1046 +1,953 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <title>Учебно-экспертный центр</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <title>Учебно-экспертный центр</title>
 </head>
 <body>
-    <input type="hidden" id="sitepage" value="index">
-    <div class="cssmedia_chk"></div>
-    <div class="wrapper">
-        <div class="navbar">
-            <div class="navbar_image" style="background-image: url(content/head.png);">
-            </div>
-        </div>
-        <div class="container">
-            <div class="nav_left">
-                <div class="leftsidenav">
-                    <ul class="list_main">
-                        <li class="list_main_li active" target="0">
-                            <a class="a_nonebasic title">Главная</a>
-                        </li>
-                        <li class="list_main_li"  target="1">
-                            <a class="a_nonebasic title">Услуги</a>
-                        </li>
-                        <li class="list_main_li"  target="2">
-                            <a class="a_nonebasic title">Курсы</a>
-                        </li>
-                        <li class="list_main_li" target="3">
-                            <a class="a_nonebasic title">Разрешительные документы</a>
-                        </li>
-                        <li class="list_main_li" target="4">
-                            <a class="a_nonebasic title">Нормативная база</a>
-                        </li>
-                        <li class="list_main_li" target="5">
-                            <a class="a_nonebasic title">Документация</a>
-                            <ul class="list_child">
-                                <li class="list_child_li"><a class="a_nonebasic subtitle">Форма заявки</a></li>
-                                <li class="list_child_li"><a class="a_nonebasic subtitle" onclick="openform('commer')">Наши услуги</a></li>
-                                <li class="list_child_li"><a class="a_nonebasic subtitle" onclick="openform('callback')">Отправить заявку</a></li>
-                            </ul>
-                        </li>
-                        <li class="list_main_li" target="6">
-                            <a class="a_nonebasic title">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <title>Учебно-экспертный центр</title>
-            <div class="main_right">
-                <div class="section section_main" target="0">
-                    <div class="subsection" target="0">
-                        <h2 style="margin: 10px">О компании</h2>
-                        <p class="p_simple">
-                            ТОО «Учебно-экспертный центр» основано в 2011 году. Мы проводим обучение в сфере профессиональной  переподготовки и повышения квалификации.  Компания предлагает услуги в области обеспечения промышленной безопасности, экспертизу промышленной безопасности проектной документации и технических устройств, технологий и материалов, проводит подготовку, переподготовку и аттестацию работников и руководителей предприятий по вопросам промышленной, пожарной безопасности, безопасности и охране труда. Мы проводим  курсы сметного дела, подготовка к тестированию в ГАСК, технический надзор в строительстве, бухгалтерские курсы, а также обучение по ряду рабочих специальностей. Мы оказываем помощь при оформлении, сопровождаем до получения разрешительных документов на поставку технических устройств. Лучший преподавательский состав! Удобное месторасположение! Индивидуальный подход к обучению!
-                            <br>
-                            <img src="content/1x300.jpg">
-                        </p>
-                        <div class="notice_box" style="background-image: url(content/arrow.png)">
-                            <h3>Аттестация учебного центра:</h3>
-                            <p>Наша компания ведет свою деятельность в соответствии с Аттестатом на право проведения работ в области промышленной безопасности № KZ82VEK00006531 от 17 января 2017 г. выданный Республиканским государственным учреждением «Комитет индустриального развития и промышленной безопасности»</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="section section_services" target="1">
-                    <h1 class="section_head">Услуги</h1>
-                    <div class="subsection" target="0">
-                        <div class="waitappear appearonce box" style="background-image: url(content/attest.jpeg); width: 100%">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Аттестация (подготовка, переподготовка) специалистов, работников опасных производственных объектов в области промышленной безопасности</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-first">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/obuchenie2.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Обучение руководителей и специалистов по курсу «Безопасность и охрана труда»</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-second">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/PB.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Обучение руководителей, специалистов и работников в области пожарной безопасности в объеме пожарно-технического минимума</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-third">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/dekl.jpg); width: 100%">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Техническое обследование и освидетельствование грузоподъемных механизмов (краны и подъемники (вышки) всех типов и модификаций)), в том числе с целью продления сроков эксплуатации и  разработка дубликатов паспортов на технические устройства</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-tenth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/defectoskop.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Техническое обследование и освидетельствование оборудования (сосудов, резервуаров, котлов), работающих под давлением и разработка дубликатов паспортов на оборудования</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-fourth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/medic.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Обучение по оказанию первой доврачебной медицинской помощи</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-fifth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/kotl.jpg);">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-sixth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/defectoskop2.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Дефектоскопия методом неразрушающего контроля (Визуальный и ультразвуковой контроль)</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-seventh">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/obuch.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Разработка декларации в области промышленной безопасности</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-eighth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/pass.jpg);">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-ninth">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section section_courses" target="2">
-                    <h1 class="section_head">Курсы</h1>
-                    <div class="subsection" target="0">
-                        <div class="waitappear appearonce box" style="background-image: url(content/courses_audit.jpg); width: 100%">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-audit">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/courses_pto.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Инженер ПТО в Строительстве</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-pto">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/courses_tech.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Технический надзор</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-tech">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/courses_smeta.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Сметное дело. АВС4</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-smeta">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="waitappear appearonce box" style="background-image: url(content/courses_construction.jpg)">
-                            <div class="box_back"></div>
-                            <div class="box_data">
-                                <p class="box_heading">Технология строительства</p>
-                                <div class="scroll_box">
-                                    <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-construction">
-                                        Подробнее
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section section_docs" target="3" style="background-image: url(content/stripe.png)">
-                    <h1 class="section_head">Разрешительные документы</h1>
-                    <div class="certificates">
-                        <div class="certificate">
-                            <a href="content/аттестат%20ТОО%20УЭЦ%202017%20г%20на%20каз.яз..pdf" target="_blank">
-                                <img src="content/att-TOO-kz.jpg" style="display: block" alt="">
-                                Аттестат ТОО УЭЦ 2017.г на казахском языке
-                            </a>
-                        </div>
-                        <div class="certificate">
-                            <a href="content/аттестат%20ТОО%20УЭЦ%202017%20г%20на%20рус.яз..pdf" target="_blank">
-                                <img src="content/att-TOO-kz.jpg" style="display: block" alt="">
-                                Аттестат ТОО УЭЦ 2017.г на русском языке
-                            </a>
-                        </div>
-                        <div class="certificate">
-                            <a href="content/свид%20на%20каз.jpeg" target="_blank">
-                                <img src="content/svid-kz-thumb.jpg" style="display: block" alt="">
-                                Заңды тұлғаны мемлекеттік тіркеу туралы куәлік
-                            </a>
-                        </div>
-                        <div class="certificate">
-                            <a href="content/свид%20на%20рус.tif" target="_blank">
-                                <img src="content/svid-kz-thumb.jpg" style="display: block" alt="">
-                                Свидетельство о государственной регистрации гос. лица
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="section section_docs" target="4" style="background-image: url(content/stripe.png)">
-                    <h1 class="section_head">Нормативная база</h1>
-                    <ul class="documents">
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/4.03-01-2011 Газораспределительные системы.doc">
-                                <i class="fa fa-file-text"></i> 4.03-01-2011 Газораспределительные системы.doc
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Закон Республики Казахстан от 11 апреля 2014 года № 188-V.doc">
-                                <i class="fa fa-file-text"></i> Закон Республики Казахстан от 11 апреля 2014 года № 188-V.doc
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Об утверждении стандартов государственных услуг в области промышленной безопасности.docx">
-                                <i class="fa fa-file-text"></i> Об утверждении стандартов государственных услуг в области промышленной безопасности.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила и сроки проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охранытруда работников.docx">
-                                <i class="fa fa-file-text"></i> Правила и сроки проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охранытруда работников.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила обеспечения промышленной безопасности при эксплуатации грузоподъемных механизмов.docx">
-                                <i class="fa fa-file-text"></i> Правила обеспечения промышленной безопасности при эксплуатации грузоподъемных механизмов.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила обеспечения промышленной безопасности при эксплуатации оборудования, работающего под давлением.docx">
-                                <i class="fa fa-file-text"></i> Правила обеспечения промышленной безопасности при эксплуатации оборудования, работающего под давлением.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила обучения работников организаций и населения мерам пожарной безопасности.docx">
-                                <i class="fa fa-file-text"></i> Правила обучения работников организаций и населения мерам пожарной безопасности.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила определяющие критерии отнесения ОПО к деклариуемым.docx">
-                                <i class="fa fa-file-text"></i> Правила определяющие критерии отнесения ОПО к деклариуемым.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила проведения обязательных медицинских осмотров.docx">
-                                <i class="fa fa-file-text"></i> Правила проведения обязательных медицинских осмотров.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Правила разработки, утверждения и пересмотра инструкции по БиОТ работодателем.docx">
-                                <i class="fa fa-file-text"></i> Правила разработки, утверждения и пересмотра инструкции по БиОТ работодателем.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Приказ Министра здравоохранения РК от 19 ноября 2009 года № 753.docx">
-                                <i class="fa fa-file-text"></i> Приказ Министра здравоохранения РК от 19 ноября 2009 года № 753.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/СН РК 1.03-14-2011 Охрана труда и техника безопасности в строительстве.doc">
-                                <i class="fa fa-file-text"></i> СН РК 1.03-14-2011 Охрана труда и техника безопасности в строительстве.doc
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Технический регламент «Общие требования к пожарной безопасности» от 19 января 2009 г. № 14.docx">
-                                <i class="fa fa-file-text"></i> Технический регламент «Общие требования к пожарной безопасности» от 19 января 2009 г. № 14.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Технический регламент Требования к безопасности пожарной техники для защиты объектов от 16 января 2009 года № 16.docx">
-                                <i class="fa fa-file-text"></i> Технический регламент Требования к безопасности пожарной техники для защиты объектов от 16 января 2009 года № 16.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Требования, предъявляемые к юридическим лицам, аттестуемым на проведение работ в области промышленной безопасности.docx">
-                                <i class="fa fa-file-text"></i> Требования, предъявляемые к юридическим лицам, аттестуемым на проведение работ в области промышленной безопасности.docx
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="content/Нормативная%20база/Трудовой кодекс Республики Казахстан.doc">
-                                <i class="fa fa-file-text"></i> Трудовой кодекс Республики Казахстан.doc
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="section section_docs" target="5" style="background-image: url(content/stripe.png)">
-                    <h1 class="section_head">Обратная связь</h1>
-                    <div class="doc_box_container">
-                        <a onclick="openform('offers')">
-                            <div class="doc_box">
-                                <div class="doc_box_border">
-                                    <div class="doc_box_image" style="background-image: url(content/doc.jpg)">
-                                        <div class="blackback"></div>
-                                        <img src="content/download.svg">
-                                    </div>
-                                </div>
-                                <p>Скачать форму заявки на обучение</p>
-                            </div>
-                        </a>
-                        <a onclick="openform('commer')">
-                            <div class="doc_box">
-                                <div class="doc_box_border">
-                                    <div class="doc_box_image" style="background-image: url(content/offer.jpg)">
-                                        <div class="blackback"></div>
-                                        <img src="content/read.svg">
-                                    </div>
-
-                                </div>
-                                <p>Узнать подробнее о наших услугах</p>
-                            </div>
-                        </a>
-                        <a onclick="openform('callback')">
-                            <div class="doc_box">
-                                <div class="doc_box_border">
-                                    <div class="doc_box_image" style="background-image: url(content/zayavka.jpg)">
-                                        <div class="blackback"></div>
-                                        <img src="content/write.svg">
-                                    </div>
-                                </div>
-                                <p>Отправить заявку на обучение персонала</p>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="form_container scrolled" id="offers">
-                        <div class="form_border top">
-                            <p class="form_title">Формы заявки на обучение</p>
-                            <i class="fa fa-times closeform" onclick="closeform('offers')"></i>
-                        </div>
-                        <ul class="documents" style="text-align: left">
-                            <li>
-                                <a target="_blank" href="content/Заявки/Заявка на дефектоскопию.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на дефектоскопию
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/Заявка на изготовление паспорта.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на изготовление паспорта
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на обучение общий.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на обучение общий
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на обучение по БиОТ.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на обучение по БиОТ
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на обучение по ПБ для раб перс.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на обучение по ПБ для раб перс.docx
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на обучение по ПБ для руководителей и специалистов.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на обучение по ПБ для руководителей и специалистов
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на обучение по ПТМ.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на обучение по ПТМ
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/Заявка на тех обсл. сосуда.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на тех обсл. сосуда
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка на экспертное заключение.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на экспертное заключение
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="content/Заявки/заявка от физ лица.docx">
-                                    <i class="fa fa-file-text"></i> Заявка от физ. лица
-                                </a>
-                            </li>
-                            <li style="width: 100%">
-                                <a target="_blank" href="content/Заявки/Заявка на техническое обследование грузоподъемных механизмов.docx">
-                                    <i class="fa fa-file-text"></i> Заявка на техническое обследование грузоподъемных механизмов
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="form_container scrolled" id="commer">
-                        <form action="temp.html" method="post">
-                            <div class="form_border top">
-                                <p class="form_title">Получить коммерческое предложение</p>
-                                <i class="fa fa-times closeform" onclick="closeform('commer')"></i>
-                            </div>
-                            <div class="form_main">
-                                <input type="text" name="name" class="text" placeholder="Имя контактного лица" required>
-                                <input type="text" name="phone" class="text" placeholder="Контактный телефон (7XX XXX XX XX)" required>
-                                <input type="email" name="email" class="text" placeholder="E-mail" required>
-                                <input type="text" name="company_name" class="text required" placeholder="Наименование компаний" required>
-                                <input type="number" name="count" class="text" placeholder="Количество людей" required>
-                                <textarea name="desc" class="text" placeholder="Опишите курс, на котором вы хотите побывать"></textarea>
-                            </div>
-                            <div class="form_border bottom">
-                                <input type="submit" name="submit" class="submit" value="Отправить заявку">
-                                <div class="clear"></div>
-                            </div>
-
-
-                        </form>
-                    </div>
-                    <div class="form_container scrolled" id="callback">
-                        <form action="temp.html" method="post">
-                            <div class="form_border top">
-                                <p class="form_title">Обратная связь</p>
-                                <i class="fa fa-times closeform" onclick="closeform('callback')"></i>
-                            </div>
-                            <div class="form_main">
-                                <input type="text" name="company_name" class="text required" placeholder="Наименование вашей компаний" required>
-                                <input type="text" name="name" class="text" placeholder="Ваше имя" required>
-                                <input type="number" name="count" class="text" placeholder="Кол-во человек на аттестацию" required>
-                                <input type="text" name="phone" class="text" placeholder="Ваш контактный телефон" required>
-                                <input type="email" name="email" class="text" placeholder="Ваш элекронный адрес" required>
-                            </div>
-                            <div class="form_border bottom">
-                                <input type="submit" name="submit" class="submit" value="Отправить заявку">
-                                <div class="clear"></div>
-                            </div>
-
-
-                        </form>
-                    </div>
-                </div>
-                <div class="section section_contacts" target="6">
-                    <h1 class="section_head">Контакты</h1>
-                    <div class="subsection">
-                        <p class="contactp"><i class="fa fa-industry"></i>ТОО «Учебно-экспертный центр»</p>
-                        <p class="contactp"><i class="fa fa-map-signs"></i>Юр. адрес: 010000, Республика Казахстан, г. Астана, район  Сарыарка, ул. Пушкина, 166/19</p>
-                        <p class="contactp"><i class="fa fa-map-signs"></i>Факт. адрес: 010000, Республика Казахстан, г. Нур-Султан, ул. Бейбітшілік, 43, 3 этаж, 306 офис</p>
-                        <p class="contactp"><i class="fa fa-envelope"></i> E-mail: <a href="mailto: uecentr@mail.ru">uecentr@mail.ru</a> </p>
-                        <p class="contactp"><i class="fa fa-phone"></i> Телефон: <a href="tel: +77172466612">+7(7172)466-612</a> </p>
-                        <p class="contactp">
-                            <i class="fa fa-user"></i> Директор - <strong>Сулейменов Жаксылык Бексултанович</strong>
-                            <br>
-                            <a href="tel: +77019989345" class="unstyled"><span class="fa fa-mobile-phone"></span>  +7(701)998-93-45</a>,
-                            <span class="placefiller"></span>
-                            <a href="tel: +77710004833" class="unstyled"><span class="fa fa-phone"></span> +7(771)000-48-33</a>
-                        </p>
-                        <p class="contactp">
-                            <i class="fa fa-user"></i> Главный специалист – <strong>Беркенова Айгерим</strong>
-                            <br>
-                            <a href="tel: +77071808244" class="unstyled"><span class="fa fa-mobile-phone"></span> +7(707)180-82-44</a>
-                            <span class="placefiller"></span>
-                        </p>
-                        <iframe width="600" height="450" frameborder="0" style="border:0; margin: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4167012769067!2d71.41671875201256!3d51.178855009341696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245872d1cc47921%3A0xe7ec066188284d7f!2z0YPQu9C40YbQsCDQkdC10LnQsdC40YLRiNC40LvQuNC6IDQzLCDQndGD0YAt0KHRg9C70YLQsNC9IDAxMDAwMA!5e0!3m2!1sru!2skz!4v1583859062448!5m2!1sru!2skz" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_left_bottom clear"></div>
-        </div>
-        <div class="footer">
-            <div class="footer_container">
-                <div class="footer_top">
-                    <div class="footer_logo">uecentr.kz</div>
-                    <div class="footer_nav">
-                        <ul>
-                            <li><a class="a_nonebasic foot_href">Главная</a></li>
-                            <li><a class="a_nonebasic foot_href">Услуги</a></li>
-                            <li><a class="a_nonebasic foot_href">Документация</a></li>
-                            <li><a class="a_nonebasic foot_href">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="footer_left">
-                    <b>ТОО «Учебно-экспертный центр»</b><br>
-                    <b>Юр. адрес:</b> 010000, Республика Казахстан, г. Нур-Султан, район  Сарыарка, ул. Пушкина, 166/19<br>
-                    <b>Факт. адрес:</b> 010000, Республика Казахстан, г. Нур-Султан, ул. Бейбітшілік, 43, 3 этаж, 306 офис<br>
-                    <b>БИН</b> 110940020940<br>
-                    <b>ИИК</b> KZ51998ВТВ0000093161<br>
-                    <b>Столичный Ф АО «Цеснабанк», г. Астана</b><br>
-                    <b>БИК</b>  ТSЕSКZКА<br>
-                </div>
-                <div class="footer_right">
-                    <b>E-mail:</b> <a href="mailto: uecentr@mail.ru">uecentr@mail.ru</a><br>
-                    <b>Телефон</b> - <a href="tel: +77172466612">+7(7172)466-612</a><br>
-                    <b>Директор</b> - Сулейменов Жаксылык Бексултанович<br>
-                    <a href="tel: 87019989345">8-701-998-93-45</a>, <a href="tel: 87710004833">8-771-000-48-33</a><br>
-                    <b>Главный специалист</b> – Беркенова Айгерим<br>
-                    <a href="tel: 87071808244">8-707-180-82-44</a><br>
-
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <div class="modal" id="modal-first">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Аттестация (подготовка, переподготовка) специалистов, работников опасных производственных объектов в области промышленной безопасности</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <strong>Согласно ст. 79, п. 4 Закона Республики Казахстан № 188-V ЗРК от 11 апреля 2014 года «О гражданской защите»</strong> подготовке подлежат технические руководители, специалисты и работники, участвующие в технологическом процессе опасного производственного объекта, эксплуатирующие, выполняющие техническое обслуживание, техническое освидетельствование, монтаж и ремонт опасных производственных объектов, поступающее на работу на опасные производственные объекты, а также аттестованных, проектных организаций и иных организаций, привлекаемых для работы на опасных производственных объектах:
-                    <ol>
-                        <li> должностные лица, ответственные за безопасное производство работ на опасных производственных объектах, а также работники, выполняющие работы на них, - ежегодно с предварительным обучением по десятичасовой программе;</li>
-                        <li> технические руководители, специалисты и инженерно-технические работники - один раз в три года с предварительным обучением по сорокачасовой программе.</li>
-                    </ol>
-                    Основными видами деятельности являются:
-                    <ul>
-                        <li>подготовка по курсу «Персонал, обслуживающий оборудования, работающие под давлением»</li>
-                        <li>подготовка по специальности «Машинист крана» (всех типов и модификаций)</li>
-                        <li>подготовка по специальности «Стропальщик»</li>
-                        <li>подготовка по специальности «Машинист автовышки и автогидроподъемника»</li>
-                        <li>подготовка по курсу «Рабочий люльки, находящийся на подъемнике (вышке)»</li>
-                    </ul>
-                    Курсы:
-                    <ul>
-                        <li>Курс «Инженер ПТО в строительстве»</li>
-                        <li>Курс «Технический надзор»</li>
-                        <li>Курс «Теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3»</li>
-                        <li>Курс «Подготовки лиц без медицинского образования по оказанию доврачебной медицинской помощи»</li>
-                        <li>Курс «Технология строительства»</li>
-                        <li>Курс «Сметное дело. АВС4»</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-second">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Обучение руководителей и специалистов по курсу «Безопасность и охрана труда»</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    В соответствии с пунктом 21 «Правил и сроков проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охраны труда работников» утвержденных приказом Министра здравоохранения и социального развития Республики Казахстан от 25 декабря 2015 года № 1019, зарегистрированного в Министерстве юстиции Республики Казахстан 30 декабря 2015 года № 12665 руководящие и работники, ответственные за обеспечение безопасности и охраны труда, периодически, не реже одного раза в три года проходят обучение и проверку знаний по вопросам безопасности и охраны труда в организациях, осуществляющих профессиональную подготовку, переподготовку и повышение квалификации кадров.
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-third">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Обучение руководителей, специалистов и работников в области пожарной безопасности в объеме пожарно-технического минимума</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Согласно «Правил обучения работников организаций и населения мерампожарной безопасности и требования к содержанию учебныхпрограмм по обучению мерам пожарной безопасности» от 9 июня 2014 года № 276, утвержденных приказом Министра внутренних дел Республики Казахстан от 16 сентября 2015 года № 777, зарегистрированного в Министерстве юстиции Республики Казахстан 27 октября 2015 года № 12198 обучение пожарно-техническому минимуму руководителей, специалистов и работников организаций, независимо от направления деятельности, проводится в течение месяца после приема на работу и с последующей периодичностью не реже одного раза в три года со дня последнего обучения, а руководителей, специалистов и работников организаций, связанных с взрывопожароопасным производством, один раз в год.
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-fourth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Техническое обследование и освидетельствование оборудования (сосудов, резервуаров, котлов), работающих под давлением и разработка дубликатов паспортов на оборудования</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <p>- Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности на территории Республики Казахстан </p>
-                    <p>- Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте (подготовка полного пакета документации)</p>
-                    <p> - Подготовка полного пакета документации с целью получения аттестата на право проведения технического обслуживания газопотребляющих систем</p>
-                    <p>Сосуды подвергаются техническому освидетельствованию (наружному, внутреннему осмотру и гидравлическому испытанию) после монтажа до пуска в работу и периодически в процессе эксплуатации.</p>
-                    <p>Техническое освидетельствование сосудов, отработавших нормативный срок службы, проводится после их обследования специализированной экспертной организацией.</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-fifth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Обучение по оказанию первой доврачебной медицинской помощи</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Согласно ст. 39. п.4 Кодекса РК от 18 сентября 2009 года № 193-IV «О здоровье народа и системе здравоохранения» и «Правил подготовки лиц без медицинского образования (парамедиков) по оказанию доврачебной медицинской помощи»утвержденных приказом Министра здравоохранения РК от 19 ноября 2009 года № 753 проводим 36- часовое обучение  работников по курсу  «Основы оказания первой доврачебной медицинской помощи - программа подготовки Парамедиков»
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-sixth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <strong>Согласно ст. 74. Закона Республики Казахстан № 188-V ЗРК от 11 апреля 2014 года «О гражданской защите»:</strong><br>
-                    1. Для получения разрешения на применение технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств, в том числе иностранного происхождения, заявитель представляет в уполномоченный орган в области промышленной безопасности заявление в форме электронного документа с краткой информацией о назначении технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств и области их применения и электронную копию экспертного заключения о соответствии технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств требованиям промышленной безопасности.
-                    Юридические лица-нерезиденты Республики Казахстан для получения разрешения на применение технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств представляют в уполномоченный орган в области промышленной безопасности:
-                    <ol>
-                        <li> заявление с краткой информацией о назначении технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств и области их применения;</li>
-                        <li> экспертное заключение о соответствии технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств требованиям промышленной безопасности.</li>
-                    </ol>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-seventh">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Дефектоскопия методом неразрушающего контроля (Визуальный и ультразвуковой контроль)</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h4>Контроль визуальный и измерительный</h4>
-                    Услуги по проведению методами неразрушающего контроля оценки соответствия  требованиям  промышленной безопасности технических устройств, материалов, конструкций. Метод неразрушающего контроля предполагает осуществление экспертизы оборудования таким способом, после которого оно остается пригодным для эксплуатации.
-                    <br>
-                    <h4>Ультразвуковая дефектоскопия, Ультразвуковая толщинометрия</h4>
-                    специальное обследование неразрушающими методами контроля сварных соединений и основного металла;<br>
-                    техническое обследование неразрушающими методами контроля грузоподъемных кранов: мостовых, козловых, башенных, стреловых, автомобильных, железнодорожных;<br>
-                    техническое обследование неразрушающими методами паровых и водогрейных котлов, сосудов, работающих под давлением.<br>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-eighth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Разработка декларации в области промышленной безопасности</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <strong>Согласно ст. 76 Закона РК от 11 апреля 2014 года № 188-V «О гражданской защите»</strong> обязательному декларированию промышленной безопасности подлежат опасные производственные объекты, соответствующие критериям отнесения опасных производственных объектов к декларируемым, утвержденным Правительством Республики Казахстан.<br>
-                    Декларация подлежит экспертизе в аттестованной организации, предоставляющей право разработки декларации.<br>
-                    Эксплуатация опасного производственного объекта без декларации, зарегистрированной уполномоченным органом в области промышленной безопасности, запрещается.
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-ninth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p> - Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности на территории Республики Казахстан</p>
-                    <p> - Подготовка полного пакета документации с целью получения аттестата на право проведения технического обслуживания газопотребляющих систем</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-tenth">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Техническое обследование и освидетельствование грузоподъемных механизмов (краны и подъемники (вышки) всех типов и модификаций)), в том числе с целью продления сроков эксплуатации и разработка дубликатов паспортов на технические устройства</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Грузоподъемные краны и съемные грузозахватные приспособления до пуска в работу подвергаются полному техническому освидетельствованию. Грузоподъемным кранам, уже находящимся в работе, технические освидетельствования проводятся в следующие сроки:</p>
-                    <ul>
-                        <li>частичное – не реже одного раза в 12 месяц;</li>
-                        <li>полное – не реже одного раза в 3 года</li>
-                        <li>редко используемым грузоподъемным кранам полное техническое освидетельствование проводится не реже одного раза в 5 лет.</li>
-                    </ul>
-                    <p>Техническое освидетельствование кранов, отработавших нормативный срок службы, проводится после их обследования экспертной организацией.</p>
-                    <p>Грузоподъемные краны, отработавшие нормативный срок службы, подвергаются специальному обследованию (диагностике) на предмет продления срока службы экспертными организациями.</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-courses-audit">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">План проведения занятий по курсу: теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3 
-                    </p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <ol>
-                        <li>Основы бухгалтерского учета (типовой план счетов, составление проводок)</li>
-                        <li>Определение остатка. Решение задач</li>
-                        <li>Синтетические и аналитические счета</li>
-                        <li>Ведение первичных документов (ПКО, РКО, командировочное удостоверение, авансовый отчет)</li>
-                        <li>Начисление заработной платы. Учет налоговых обязательств (ИПН, социальные отчисления, социальный налог, начисление алиментов, отпускных, больничные листы)</li>
-                        <li>Учет денежных средств (касса, банк)</li>
-                        <li>Учет расчетов с физическими и юридическими лицами</li>
-                        <li>Учет запасов</li>
-                        <li>Учет основных средств и нематериальных активов</li>
-                        <li>Определение дохода</li>
-                        <li>Износ ОС</li>
-                        <li>Инвентаризация</li>
-                        <li>Учет инвестиций (обзор)</li>
-                        <li>Бухгалтерский баланс</li>
-                        <li>Налогобложение (100, 200, 300, 700, 910 формы)</li>
-                        <li>1С Бухгалтерия 8.3</li>
-                    </ol>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-courses-pto">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Инженер ПТО в строительстве</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Программа «Профессионал»</strong></p>
-                    <p><strong>Продолжительность: </strong>20 часов </p>
-                    <p><strong>Краткое описание курса:</strong></p>
-                    <p>Миссия, цели и задачи ПТО в строительстве</p>
-                    <p>Должностные обязанности инженера ПТО в строительстве</p>
-                    <p>Взаимодействие ПТО с Заказчиком, Авторским и Техническим надзорами</p>
-                    <p>Взаимодействие ПТО с другими подразделениями (ИТР, ОГС, ОМТС, ОТиЗ, ЮО)</p>
-                    <p>Нормативно-технические акты РК в области строительства</p>
-                    <p>Основные разделы ПСД, процедура получения и правила проверки ПСД</p>
-                    <p>Процедура оформления, утверждения в производство работ и выдачи ПСД на объект</p>
-                    <p>Процедура пересогласования и повторная выдача ПСД в процессе строительства</p>
-                    <p>Основные этапы и последовательность этапов строительства</p>
-                    <p>Состав Исходно-разрешительной и Технической документации объекта</p>
-                    <p>Разделы и состав Исполнительной документации (ИД), реестр ИД</p>
-                    <p>Понятие и виды Лимитно-заборных карт (ЛЗК) по заявкам, списанию, работам Прием-сдача Выполнения, состав документов, реестр выполнения</p>
-                    <p>Понятие и виды Акта приемки выполненных работ (АВР) (формы 2Б и 2В</p>
-                    <p>Понятие и назначение Справки объемов выполненных работ</p>
-                    <p>Понятие и назначение Справки о стоимости выполненных работ и затрат</p>
-                    <p>Понятие и виды Календарных графиков в строительстве</p>
-                    <p>Правила составления Графика производства работ (ГПР)</p>
-                    <p>Правила составления Графика движения рабочей силы (ГДР)</p>
-                    <p>Правила составления Графика движения машин и механизмов (ГДМ)</p>
-                    <p>Понятие Товарно-материальные ценности (ТМЦ), группы ТМЦ</p>
-                    <p>Понятия Основные материалы и Расходные материалы (расходники)</p>
-                    <p>Понятие Малоценные средства производства (малоценка) и СИЗ</p>
-                    <p>Понятия Средства малой механизации, Инструменты, Спецоснастка, Инвентарь</p>
-                    <p>Понятия и расчет Норм расхода основных и расходных материалов</p>
-                    <p>Понятие и расчет Лимитов расхода малоценки, инструментов, инвентаря, СИЗ</p>
-                    <p>Понятие и расчет требуемого объема и оборачиваемости спецоснастки</p>
-                    <p>Понятия Заявка на закуп ТМЦ и Набор работ по объекту, составление заявки</p>
-                    <p>Плановые и внеплановые заявки на закуп ТМЦ с учетом норм расхода и потерь</p>
-                    <p>Понятие Списание ТМЦ, виды документов по списанию, составление и проверка М-29</p>
-                    <p>Акт списания механизмов, малоценки, инструментов, спецоснастки, инвентаря, СИЗ</p>
-                    <p>Понятия и формы Дефектного акта и Акта контрольного обмера, правила составления</p>
-                    <p>Процедуры и состав документации при сдаче и вводе объекта в эксплуатацию</p>
-                    <p>Понятия Коэффициент трудового участия (КТУ), область применения</p>
-                    <p>Понятия Единица объема работ и Единица учета материалов, область применения</p>
-                    <p>Правило десятичной запятой, порядок определения и область применения</p>
-                    <p>Понятия Цена единицы работ и Коэффициент удорожания, область применения</p>
-                    <p>Договор возмездного оказания услуг: основные разделы, область применения</p>
-                    <p>Договор субподряда: виды, основные разделы, состав приложений</p>
-                    <p>Договор поставки ТМЦ: виды, основные разделы, состав приложений</p>
-                    <p>Договор аренды техники: виды, основные разделы, состав приложений</p>
-                    <p>Проект производства работ (ППР), основные разделы, правила составления</p>
-                    <p>Виды тендеров, электронные тендерные площадки, правила проведения и участия</p>
-                    <p>Тендерные требования к поставщику, состав тендерной документации</p>
-                    <p>Практическое занятие 1: разбор сметы, порядок расчета сметной стоимости </p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-courses-smeta">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Сметное дело. АВС4</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>План проведения занятий по курсам сметы, программы ABC-4</strong></p>
-                    <ol>
-                        <li>Теоретическая часть. Основные понятия</li>
-                        <ul>
-                            <li>Сметная стоимость строительства</li>
-                            <ul>
-                                <li>Объект строительства</li>
-                                <li>Пусковой комплекс</li>
-                                <li>Очередь строительства</li>
-                                <li>Стройка</li>
-                            </ul>
-                        </ul>
-                        <li>Основные принципы определения сметной стоимости строительства</li>
-                        <li>Правила составления сметной документации</li>
-                        <ul>
-                            <li>Локальные сметы</li>
-                            <li>Локальные сметные расчеты</li>
-                            <li>Объектные сметы</li>
-                            <li>Объектные сметные расчеты</li>
-                            <li>Объектные сметы</li>
-                            <li>Сводные сметные расчеты стоимости строительства</li>
-                            <li>Состав сметной документации</li>
-                            <li>Составление локальной сметы</li>
-                            <ul>
-                                <li>Работа по СНиР. Поиск нужного вида работы.</li>
-                                <li>Расчет материалов. Расчет стоимости работы за одну единицу, расчет всего по количеству, расчет накладных расходов, затраты труда рабочих строителей и рабочих обслуживающих машины</li>
-                                <li>Расчет прямых затрат</li>
-                            </ul>
-                            <li>Дополнительные затраты, расчет дополнительных затрат. Работа по сборникам Сметные затраты на строительство временных зданий и сооружений, сборник сметных норм дополнительных затрат при производстве строительно-монтажных работ в зимнее время. СН РК 8.02-07-2002 4.</li>
-                        </ul>
-                    </ol>
-                    <p>Программа ABC-4</p>
-                    <ul>
-                        <li>Знакомство с главным меню</li>
-                        <li>Список файлов</li>
-                        <li>Знакомство с информационном обеспечением</li>
-                        <li>Понятия форма 1, 3, 4, КС3, 2В</li>
-                        <li>Составление локальной сметы</li>
-                        <li>Работа со сметой в экранном редакторе</li>
-                        <li>Работа с ресурсами а) удалить ресурс в) заменить ресурс с) добавить ресурс d)включить отдельной позицией e)присвоить метру f ) изменить стоимость материала</li>
-                        <li>Числовые кодификаторы</li>
-                        <li>Сводные сметные расчеты стоимости строительства</li>
-                        <li>Акт выполненных работ</li>
-                        <li>Подготовка работ к отчету</li>
-                        <li>Контрольная итоговая работа по дефектному акту.</li>
-                        <li>Ресурсный метод.</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-courses-construction">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Технология строительства</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Продолжительность: </strong>12 часов (6 занятия по 2 часа) </p>
-                    <p><strong>Краткое описание курса:</strong></p>
-                    <p>Основные разделы ПСД</p>
-                    <p>Основные этапы и последовательность этапов строительства</p>
-                    <p>Строительный генеральный план (СГП)</p>
-                    <p>Производство подготовительных работ на объекте согласно СГП </p>
-                    <ul>
-                        <li>Подготовительные и земляные работы</li>
-                        <li>Свайные фундаменты. Технология устройства</li>
-                        <li>Монолитные и сборные фундаменты. Виды и технология устройства</li>
-                        <li>Подвалы и цокольные этажи. Технология устройства</li>
-                        <li>Конструктивные схемы зданий и сооружений</li>
-                        <li>Технология устройства монолитных конструкций</li>
-                        <li>Технология монтажа сборных железобетонных конструкций</li>
-                        <li>Технология монтажа металлических конструкций</li>
-                        <li>Технология устройства кирпичных конструкций</li>
-                        <li>Технология устройства кровли. Виды кровли</li>
-                        <li>Технология устройства полов. Виды полов</li>
-                        <li>Технология устройства фасадов. Виды фасадов</li>
-                        <li>Технология внутренних отделочных работ</li>
-                        <li>Технология устройства подвесных потолков. Виды потолков</li>
-                        <li>Наружные инженерные сети. Виды и технология монтажа</li>
-                    </ul>
-                    <p>Внутренние инженерные сети. Виды и технология монтажа</p>
-                    <p>Благоустройство, озеленение и малые архитектурные формы (МАФы)</p>
-                    <p>Техника безопасности при производстве СМР</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal" id="modal-courses-tech">
-            <div class="modal-background" data-dismiss="modal"></div>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-header-title">Курс технический надзор</p>
-                    <button class="modal-close">
-                        <i class="fa fa-close" data-dismiss="modal"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <strong>Основы работы технического надзора  и его должностные обязанности и функции.</strong>
-                    <ol>
-                        <li>Подготавливать исходно -  разрешительную  документацию</li>
-                        <li>Оформлять и утверждать ПСД</li>
-                        <li>Согласование и пересогласование рабочего проекта</li>
-                        <li>Изучите общие требования СНиП РК к приемке выполненных СМР т.е. разбор нормативно-технические документы.</li>
-                        <li>Изучите форму 2В ( акты по СМР), ЛЗК по выполненным работам, акты на промежуточные работы, акты на освидетельствование выполненных скрытых работ.</li>
-                        <li>Научитесь заполнять отчетность технадзора, сдача и ввод в эксплуатацию  законченного объекта.</li>
-                    </ol>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-blue modal-btn" data-dismiss="modal">
-                        Закрыть
-                    </button>
-                </div>
-            </div>
-        </div>
+  <input type="hidden" id="sitepage" value="index" />
+  <div class="cssmedia_chk"></div>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="navbar_image" style="background-image: url(content/head.png)"></div>
     </div>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript">
-        console.log('uecentr.kz')
-    </script>
+    <div class="container">
+      <div class="nav_left">
+        <div class="leftsidenav">
+          <ul class="list_main">
+            <li class="list_main_li active" target="0">
+              <a class="a_nonebasic title">Главная</a>
+            </li>
+            <li class="list_main_li" target="1">
+              <a class="a_nonebasic title">Услуги</a>
+            </li>
+            <li class="list_main_li" target="2">
+              <a class="a_nonebasic title">Курсы</a>
+            </li>
+            <li class="list_main_li" target="3">
+              <a class="a_nonebasic title">Разрешительные документы</a>
+            </li>
+            <li class="list_main_li" target="4">
+              <a class="a_nonebasic title">Нормативная база</a>
+            </li>
+            <li class="list_main_li" target="5">
+              <a class="a_nonebasic title">Документация</a>
+              <ul class="list_child">
+                <li class="list_child_li"><a class="a_nonebasic subtitle">Форма заявки</a></li>
+                <li class="list_child_li"><a class="a_nonebasic subtitle" onclick="openform('commer')">Наши услуги</a></li>
+                <li class="list_child_li"><a class="a_nonebasic subtitle" onclick="openform('callback')">Отправить заявку</a></li>
+              </ul>
+            </li>
+            <li class="list_main_li" target="6">
+              <a class="a_nonebasic title">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <title>Учебно-экспертный центр</title>
+      <div class="main_right">
+        <div class="section section_main" target="0">
+          <div class="subsection" target="0">
+            <h2 style="margin: 10px">О компании</h2>
+            <p class="p_simple">
+              ТОО «Учебно-экспертный центр» основано в 2011 году. Мы проводим обучение в сфере профессиональной  переподготовки и повышения квалификации.  Компания предлагает услуги в области обеспечения промышленной безопасности, экспертизу промышленной безопасности проектной документации и технических устройств, технологий и материалов, проводит подготовку, переподготовку и аттестацию работников и руководителей предприятий по вопросам промышленной, пожарной безопасности, безопасности и охране труда. Мы проводим курсы сметного дела, подготовка к тестированию в ГАСК, технический надзор в строительстве, бухгалтерские курсы, а также обучение по ряду рабочих специальностей. Мы оказываем помощь при оформлении, сопровождаем до получения разрешительных документов на поставку технических устройств. Лучший преподавательский состав! Удобное месторасположение! Индивидуальный подход к обучению!
+              <br />
+              <img src="content/1x300.jpg" />
+            </p>
+            <div class="notice_box" style="background-image: url(content/arrow.png)">
+              <h3>Аттестация учебного центра:</h3>
+              <p>Наша компания ведет свою деятельность в соответствии с Аттестатом на право проведения работ в области промышленной безопасности № KZ82VEK00006531 от 17 января 2017 г. выданный Республиканским государственным учреждением «Комитет индустриального развития и промышленной безопасности»</p>
+            </div>
+          </div>
+        </div>
+        <div class="section section_services" target="1">
+          <h1 class="section_head">Услуги</h1>
+          <div class="subsection" target="0">
+            <div class="waitappear appearonce box" style="background-image: url(content/attest.jpeg); width: 100%">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Аттестация (подготовка, переподготовка) специалистов, работников опасных производственных объектов в области промышленной безопасности</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-first">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/obuchenie2.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Обучение руководителей и специалистов по курсу «Безопасность и охрана труда»</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-second">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/PB.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Обучение руководителей, специалистов и работников в области пожарной безопасности в объеме пожарно-технического минимума</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-third">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/dekl.jpg); width: 100%">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Техническое обследование и освидетельствование грузоподъемных механизмов (краны и подъемники (вышки) всех типов и модификаций)), в том числе с целью продления сроков эксплуатации и разработка дубликатов паспортов на технические устройства</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-tenth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/defectoskop.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Техническое обследование и освидетельствование оборудования (сосудов, резервуаров, котлов), работающих под давлением и разработка дубликатов паспортов на оборудования</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-fourth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/medic.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Обучение по оказанию первой доврачебной медицинской помощи</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-fifth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/kotl.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-sixth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/defectoskop2.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Дефектоскопия методом неразрушающего контроля (Визуальный и ультразвуковой контроль)</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-seventh">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/obuch.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Разработка декларации в области промышленной безопасности</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-eighth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/pass.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-ninth">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section_courses" target="2">
+          <h1 class="section_head">Курсы</h1>
+          <div class="subsection" target="0">
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_audit.jpg); width: 100%">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-audit">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_pto.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Инженер ПТО в Строительстве</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-pto">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_tech.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Технический надзор</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-tech">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_smeta.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Сметное дело. АВС4</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-smeta">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_construction.jpg)">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading">Технология строительства</p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-construction">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="waitappear appearonce box" style="background-image: url(content/courses_antiterror.jpeg); width: 100%">
+              <div class="box_back"></div>
+              <div class="box_data">
+                <p class="box_heading"></p>
+                <div class="scroll_box">
+                  <button class="btn btn-white" data-role="modal-open" data-target="#modal-courses-antiterror">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section_docs" target="3" style="background-image: url(content/stripe.png)">
+          <h1 class="section_head">Разрешительные документы</h1>
+          <div class="certificates">
+            <div class="certificate">
+              <a href="content/аттестат%20ТОО%20УЭЦ%202017%20г%20на%20каз.яз..pdf" target="_blank">
+                <img src="content/att-TOO-kz.jpg" style="display: block" alt="" />
+                Аттестат ТОО УЭЦ 2017.г на казахском языке
+              </a>
+            </div>
+            <div class="certificate">
+              <a href="content/аттестат%20ТОО%20УЭЦ%202017%20г%20на%20рус.яз..pdf" target="_blank">
+                <img src="content/att-TOO-kz.jpg" style="display: block" alt="" />
+                Аттестат ТОО УЭЦ 2017.г на русском языке
+              </a>
+            </div>
+            <div class="certificate">
+              <a href="content/свид%20на%20каз.jpeg" target="_blank">
+                <img src="content/svid-kz-thumb.jpg" style="display: block" alt="" />
+                Заңды тұлғаны мемлекеттік тіркеу туралы куәлік
+              </a>
+            </div>
+            <div class="certificate">
+              <a href="content/свид%20на%20рус.tif" target="_blank">
+                <img src="content/svid-kz-thumb.jpg" style="display: block" alt="" />
+                Свидетельство о государственной регистрации гос. лица
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section section_docs" target="4" style="background-image: url(content/stripe.png)">
+          <h1 class="section_head">Нормативная база</h1>
+          <ul class="documents">
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/4.03-01-2011 Газораспределительные системы.doc"> <i class="fa fa-file-text"></i> 4.03-01-2011 Газораспределительные системы.doc </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Закон Республики Казахстан от 11 апреля 2014 года № 188-V.doc"> <i class="fa fa-file-text"></i> Закон Республики Казахстан от 11 апреля 2014 года № 188-V.doc </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Об утверждении стандартов государственных услуг в области промышленной безопасности.docx"> <i class="fa fa-file-text"></i> Об утверждении стандартов государственных услуг в области промышленной безопасности.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила и сроки проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охранытруда работников.docx"> <i class="fa fa-file-text"></i> Правила и сроки проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охранытруда работников.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила обеспечения промышленной безопасности при эксплуатации грузоподъемных механизмов.docx"> <i class="fa fa-file-text"></i> Правила обеспечения промышленной безопасности при эксплуатации грузоподъемных механизмов.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила обеспечения промышленной безопасности при эксплуатации оборудования, работающего под давлением.docx"> <i class="fa fa-file-text"></i> Правила обеспечения промышленной безопасности при эксплуатации оборудования, работающего под давлением.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила обучения работников организаций и населения мерам пожарной безопасности.docx"> <i class="fa fa-file-text"></i> Правила обучения работников организаций и населения мерам пожарной безопасности.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила определяющие критерии отнесения ОПО к деклариуемым.docx"> <i class="fa fa-file-text"></i> Правила определяющие критерии отнесения ОПО к деклариуемым.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила проведения обязательных медицинских осмотров.docx"> <i class="fa fa-file-text"></i> Правила проведения обязательных медицинских осмотров.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Правила разработки, утверждения и пересмотра инструкции по БиОТ работодателем.docx"> <i class="fa fa-file-text"></i> Правила разработки, утверждения и пересмотра инструкции по БиОТ работодателем.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Приказ Министра здравоохранения РК от 19 ноября 2009 года № 753.docx"> <i class="fa fa-file-text"></i> Приказ Министра здравоохранения РК от 19 ноября 2009 года № 753.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/СН РК 1.03-14-2011 Охрана труда и техника безопасности в строительстве.doc"> <i class="fa fa-file-text"></i> СН РК 1.03-14-2011 Охрана труда и техника безопасности в строительстве.doc </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Технический регламент «Общие требования к пожарной безопасности» от 19 января 2009 г. № 14.docx"> <i class="fa fa-file-text"></i> Технический регламент «Общие требования к пожарной безопасности» от 19 января 2009 г. № 14.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Технический регламент Требования к безопасности пожарной техники для защиты объектов от 16 января 2009 года № 16.docx"> <i class="fa fa-file-text"></i> Технический регламент Требования к безопасности пожарной техники для защиты объектов от 16 января 2009 года № 16.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Требования, предъявляемые к юридическим лицам, аттестуемым на проведение работ в области промышленной безопасности.docx"> <i class="fa fa-file-text"></i> Требования, предъявляемые к юридическим лицам, аттестуемым на проведение работ в области промышленной безопасности.docx </a>
+            </li>
+            <li>
+              <a target="_blank" href="content/Нормативная%20база/Трудовой кодекс Республики Казахстан.doc"> <i class="fa fa-file-text"></i> Трудовой кодекс Республики Казахстан.doc </a>
+            </li>
+          </ul>
+        </div>
+        <div class="section section_docs" target="5" style="background-image: url(content/stripe.png)">
+          <h1 class="section_head">Обратная связь</h1>
+          <div class="doc_box_container">
+            <a onclick="openform('offers')">
+              <div class="doc_box">
+                <div class="doc_box_border">
+                  <div class="doc_box_image" style="background-image: url(content/doc.jpg)">
+                    <div class="blackback"></div>
+                    <img src="content/download.svg" />
+                  </div>
+                </div>
+                <p>Скачать форму заявки на обучение</p>
+              </div>
+            </a>
+            <a onclick="openform('commer')">
+              <div class="doc_box">
+                <div class="doc_box_border">
+                  <div class="doc_box_image" style="background-image: url(content/offer.jpg)">
+                    <div class="blackback"></div>
+                    <img src="content/read.svg" />
+                  </div>
+                </div>
+                <p>Узнать подробнее о наших услугах</p>
+              </div>
+            </a>
+            <a onclick="openform('callback')">
+              <div class="doc_box">
+                <div class="doc_box_border">
+                  <div class="doc_box_image" style="background-image: url(content/zayavka.jpg)">
+                    <div class="blackback"></div>
+                    <img src="content/write.svg" />
+                  </div>
+                </div>
+                <p>Отправить заявку на обучение персонала</p>
+              </div>
+            </a>
+            <div class="clear"></div>
+          </div>
+          <div class="form_container scrolled" id="offers">
+            <div class="form_border top">
+              <p class="form_title">Формы заявки на обучение</p>
+              <i class="fa fa-times closeform" onclick="closeform('offers')"></i>
+            </div>
+            <ul class="documents" style="text-align: left">
+              <li>
+                <a target="_blank" href="content/Заявки/Заявка на дефектоскопию.docx"> <i class="fa fa-file-text"></i> Заявка на дефектоскопию </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/Заявка на изготовление паспорта.docx"> <i class="fa fa-file-text"></i> Заявка на изготовление паспорта </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на обучение общий.docx"> <i class="fa fa-file-text"></i> Заявка на обучение общий </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на обучение по БиОТ.docx"> <i class="fa fa-file-text"></i> Заявка на обучение по БиОТ </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на обучение по ПБ для раб перс.docx"> <i class="fa fa-file-text"></i> Заявка на обучение по ПБ для раб перс.docx </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на обучение по ПБ для руководителей и специалистов.docx"> <i class="fa fa-file-text"></i> Заявка на обучение по ПБ для руководителей и специалистов </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на обучение по ПТМ.docx"> <i class="fa fa-file-text"></i> Заявка на обучение по ПТМ </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/Заявка на тех обсл. сосуда.docx"> <i class="fa fa-file-text"></i> Заявка на тех обсл. сосуда </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка на экспертное заключение.docx"> <i class="fa fa-file-text"></i> Заявка на экспертное заключение </a>
+              </li>
+              <li>
+                <a target="_blank" href="content/Заявки/заявка от физ лица.docx"> <i class="fa fa-file-text"></i> Заявка от физ. лица </a>
+              </li>
+              <li style="width: 100%">
+                <a target="_blank" href="content/Заявки/Заявка на техническое обследование грузоподъемных механизмов.docx"> <i class="fa fa-file-text"></i> Заявка на техническое обследование грузоподъемных механизмов </a>
+              </li>
+            </ul>
+          </div>
+          <div class="form_container scrolled" id="commer">
+            <form action="temp.html" method="post">
+              <div class="form_border top">
+                <p class="form_title">Получить коммерческое предложение</p>
+                <i class="fa fa-times closeform" onclick="closeform('commer')"></i>
+              </div>
+              <div class="form_main">
+                <input type="text" name="name" class="text" placeholder="Имя контактного лица" required />
+                <input type="text" name="phone" class="text" placeholder="Контактный телефон (7XX XXX XX XX)" required />
+                <input type="email" name="email" class="text" placeholder="E-mail" required />
+                <input type="text" name="company_name" class="text required" placeholder="Наименование компаний" required />
+                <input type="number" name="count" class="text" placeholder="Количество людей" required />
+                <textarea name="desc" class="text" placeholder="Опишите курс, на котором вы хотите побывать"></textarea>
+              </div>
+              <div class="form_border bottom">
+                <input type="submit" name="submit" class="submit" value="Отправить заявку" />
+                <div class="clear"></div>
+              </div>
+            </form>
+          </div>
+          <div class="form_container scrolled" id="callback">
+            <form action="temp.html" method="post">
+              <div class="form_border top">
+                <p class="form_title">Обратная связь</p>
+                <i class="fa fa-times closeform" onclick="closeform('callback')"></i>
+              </div>
+              <div class="form_main">
+                <input type="text" name="company_name" class="text required" placeholder="Наименование вашей компаний" required />
+                <input type="text" name="name" class="text" placeholder="Ваше имя" required />
+                <input type="number" name="count" class="text" placeholder="Кол-во человек на аттестацию" required />
+                <input type="text" name="phone" class="text" placeholder="Ваш контактный телефон" required />
+                <input type="email" name="email" class="text" placeholder="Ваш элекронный адрес" required />
+              </div>
+              <div class="form_border bottom">
+                <input type="submit" name="submit" class="submit" value="Отправить заявку" />
+                <div class="clear"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="section section_contacts" target="6">
+          <h1 class="section_head">Контакты</h1>
+          <div class="subsection">
+            <p class="contactp"><i class="fa fa-industry"></i>ТОО «Учебно-экспертный центр»</p>
+            <p class="contactp"><i class="fa fa-map-signs"></i>Юр. адрес: 010000, Республика Казахстан, г. Астана, район Сарыарка, ул. Пушкина, 166/19</p>
+            <p class="contactp"><i class="fa fa-map-signs"></i>Факт. адрес: 010000, Республика Казахстан, г. Нур-Султан, ул. Бейбітшілік, 43, 3 этаж, 306 офис</p>
+            <p class="contactp"><i class="fa fa-envelope"></i> E-mail: <a href="mailto: uecentr@mail.ru">uecentr@mail.ru</a></p>
+            <p class="contactp"><i class="fa fa-phone"></i> Телефон: <a href="tel: +77172466612">+7(7172)466-612</a></p>
+            <p class="contactp">
+              <i class="fa fa-user"></i> Директор - <strong>Сулейменов Жаксылык Бексултанович</strong>
+              <br />
+              <a href="tel: +77019989345" class="unstyled"><span class="fa fa-mobile-phone"></span> +7(701)998-93-45</a>,
+              <span class="placefiller"></span>
+              <a href="tel: +77710004833" class="unstyled"><span class="fa fa-phone"></span> +7(771)000-48-33</a>
+            </p>
+            <p class="contactp">
+              <i class="fa fa-user"></i> Главный специалист – <strong>Беркенова Айгерим</strong>
+              <br />
+              <a href="tel: +77071808244" class="unstyled"><span class="fa fa-mobile-phone"></span> +7(707)180-82-44</a>
+              <span class="placefiller"></span>
+            </p>
+            <iframe width="600" height="450" frameborder="0" style="border: 0; margin: 20px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4167012769067!2d71.41671875201256!3d51.178855009341696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245872d1cc47921%3A0xe7ec066188284d7f!2z0YPQu9C40YbQsCDQkdC10LnQsdC40YLRiNC40LvQuNC6IDQzLCDQndGD0YAt0KHRg9C70YLQsNC9IDAxMDAwMA!5e0!3m2!1sru!2skz!4v1583859062448!5m2!1sru!2skz" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="nav_left_bottom clear"></div>
+    </div>
+    <div class="footer">
+      <div class="footer_container">
+        <div class="footer_top">
+          <div class="footer_logo">uecentr.kz</div>
+          <div class="footer_nav">
+            <ul>
+              <li><a class="a_nonebasic foot_href">Главная</a></li>
+              <li><a class="a_nonebasic foot_href">Услуги</a></li>
+              <li><a class="a_nonebasic foot_href">Документация</a></li>
+              <li><a class="a_nonebasic foot_href">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="footer_left">
+          <b>ТОО «Учебно-экспертный центр»</b><br />
+          <b>Юр. адрес:</b> 010000, Республика Казахстан, г. Нур-Султан, район Сарыарка, ул. Пушкина, 166/19<br />
+          <b>Факт. адрес:</b> 010000, Республика Казахстан, г. Нур-Султан, ул. Бейбітшілік, 43, 3 этаж, 306 офис<br />
+          <b>БИН</b> 110940020940<br />
+          <b>ИИК</b> KZ51998ВТВ0000093161<br />
+          <b>Столичный Ф АО «Цеснабанк», г. Астана</b><br />
+          <b>БИК</b> ТSЕSКZКА<br />
+        </div>
+        <div class="footer_right">
+          <b>E-mail:</b> <a href="mailto: uecentr@mail.ru">uecentr@mail.ru</a><br />
+          <b>Телефон</b> - <a href="tel: +77172466612">+7(7172)466-612</a><br />
+          <b>Директор</b> - Сулейменов Жаксылык Бексултанович<br />
+          <a href="tel: 87019989345">8-701-998-93-45</a>, <a href="tel: 87710004833">8-771-000-48-33</a><br />
+          <b>Главный специалист</b> – Беркенова Айгерим<br />
+          <a href="tel: 87071808244">8-707-180-82-44</a><br />
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-first">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Аттестация (подготовка, переподготовка) специалистов, работников опасных производственных объектов в области промышленной безопасности</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Согласно ст. 79, п. 4 Закона Республики Казахстан № 188-V ЗРК от 11 апреля 2014 года «О гражданской защите»</strong> подготовке подлежат технические руководители, специалисты и работники, участвующие в технологическом процессе опасного производственного объекта, эксплуатирующие, выполняющие техническое обслуживание, техническое освидетельствование, монтаж и ремонт опасных производственных объектов, поступающее на работу на опасные производственные объекты, а также аттестованных, проектных организаций и иных организаций, привлекаемых для работы на опасных производственных объектах:
+          <ol>
+            <li>должностные лица, ответственные за безопасное производство работ на опасных производственных объектах, а также работники, выполняющие работы на них, - ежегодно с предварительным обучением по десятичасовой программе;</li>
+            <li>технические руководители, специалисты и инженерно-технические работники - один раз в три года с предварительным обучением по сорокачасовой программе.</li>
+          </ol>
+          Основными видами деятельности являются:
+          <ul>
+            <li>подготовка по курсу «Персонал, обслуживающий оборудования, работающие под давлением»</li>
+            <li>подготовка по специальности «Машинист крана» (всех типов и модификаций)</li>
+            <li>подготовка по специальности «Стропальщик»</li>
+            <li>подготовка по специальности «Машинист автовышки и автогидроподъемника»</li>
+            <li>подготовка по курсу «Рабочий люльки, находящийся на подъемнике (вышке)»</li>
+          </ul>
+          Курсы:
+          <ul>
+            <li>Курс «Инженер ПТО в строительстве»</li>
+            <li>Курс «Технический надзор»</li>
+            <li>Курс «Теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3»</li>
+            <li>Курс «Подготовки лиц без медицинского образования по оказанию доврачебной медицинской помощи»</li>
+            <li>Курс «Технология строительства»</li>
+            <li>Курс «Сметное дело. АВС4»</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-second">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Обучение руководителей и специалистов по курсу «Безопасность и охрана труда»</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">В соответствии с пунктом 21 «Правил и сроков проведения обучения, инструктирования и проверок знаний по вопросам безопасности и охраны труда работников» утвержденных приказом Министра здравоохранения и социального развития Республики Казахстан от 25 декабря 2015 года № 1019, зарегистрированного в Министерстве юстиции Республики Казахстан 30 декабря 2015 года № 12665 руководящие и работники, ответственные за обеспечение безопасности и охраны труда, периодически, не реже одного раза в три года проходят обучение и проверку знаний по вопросам безопасности и охраны труда в организациях, осуществляющих профессиональную подготовку, переподготовку и повышение квалификации кадров.</div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-third">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Обучение руководителей, специалистов и работников в области пожарной безопасности в объеме пожарно-технического минимума</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">Согласно «Правил обучения работников организаций и населения мерампожарной безопасности и требования к содержанию учебныхпрограмм по обучению мерам пожарной безопасности» от 9 июня 2014 года № 276, утвержденных приказом Министра внутренних дел Республики Казахстан от 16 сентября 2015 года № 777, зарегистрированного в Министерстве юстиции Республики Казахстан 27 октября 2015 года № 12198 обучение пожарно-техническому минимуму руководителей, специалистов и работников организаций, независимо от направления деятельности, проводится в течение месяца после приема на работу и с последующей периодичностью не реже одного раза в три года со дня последнего обучения, а руководителей, специалистов и работников организаций, связанных с взрывопожароопасным производством, один раз в год.</div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-fourth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Техническое обследование и освидетельствование оборудования (сосудов, резервуаров, котлов), работающих под давлением и разработка дубликатов паспортов на оборудования</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>- Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности на территории Республики Казахстан </p>
+          <p>- Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте (подготовка полного пакета документации)</p>
+          <p> - Подготовка полного пакета документации с целью получения аттестата на право проведения технического обслуживания газопотребляющих систем</p>
+          <p>Сосуды подвергаются техническому освидетельствованию (наружному, внутреннему осмотру и гидравлическому испытанию) после монтажа до пуска в работу и периодически в процессе эксплуатации.</p>
+          <p>Техническое освидетельствование сосудов, отработавших нормативный срок службы, проводится после их обследования специализированной экспертной организацией.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-fifth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Обучение по оказанию первой доврачебной медицинской помощи</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">Согласно ст. 39. п.4 Кодекса РК от 18 сентября 2009 года № 193-IV «О здоровье народа и системе здравоохранения» и «Правил подготовки лиц без медицинского образования (парамедиков) по оказанию доврачебной медицинской помощи»утвержденных приказом Министра здравоохранения РК от 19 ноября 2009 года № 753 проводим 36- часовое обучение  работников по курсу  «Основы оказания первой доврачебной медицинской помощи - программа подготовки Парамедиков»</div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-sixth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Проведение экспертизы в области промышленной безопасности технологий, технических устройств, материалов, с целью получения разрешения на применение на опасном производственном объекте</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Согласно ст. 74. Закона Республики Казахстан № 188-V ЗРК от 11 апреля 2014 года «О гражданской защите»:</strong><br />
+          1. Для получения разрешения на применение технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств, в том числе иностранного происхождения, заявитель представляет в уполномоченный орган в области промышленной безопасности заявление в форме электронного документа с краткой информацией о назначении технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств и области их применения и электронную копию экспертного заключения о соответствии технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств требованиям промышленной безопасности. Юридические лица-нерезиденты Республики Казахстан для получения разрешения на применение технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств представляют в уполномоченный орган в области промышленной безопасности:
+          <ol>
+            <li>заявление с краткой информацией о назначении технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств и области их применения;</li>
+            <li>экспертное заключение о соответствии технологий, технических устройств, материалов, применяемых на опасных производственных объектах, опасных технических устройств требованиям промышленной безопасности.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-seventh">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Дефектоскопия методом неразрушающего контроля (Визуальный и ультразвуковой контроль)</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Контроль визуальный и измерительный</h4>
+          Услуги по проведению методами неразрушающего контроля оценки соответствия требованиям промышленной безопасности технических устройств, материалов, конструкций. Метод неразрушающего контроля предполагает осуществление экспертизы оборудования таким способом, после которого оно остается пригодным для эксплуатации.
+          <br />
+          <h4>Ультразвуковая дефектоскопия, Ультразвуковая толщинометрия</h4>
+          специальное обследование неразрушающими методами контроля сварных соединений и основного металла;<br />
+          техническое обследование неразрушающими методами контроля грузоподъемных кранов: мостовых, козловых, башенных, стреловых, автомобильных, железнодорожных;<br />
+          техническое обследование неразрушающими методами паровых и водогрейных котлов, сосудов, работающих под давлением.<br />
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-eighth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Разработка декларации в области промышленной безопасности</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Согласно ст. 76 Закона РК от 11 апреля 2014 года № 188-V «О гражданской защите»</strong> обязательному декларированию промышленной безопасности подлежат опасные производственные объекты, соответствующие критериям отнесения опасных производственных объектов к декларируемым, утвержденным Правительством Республики Казахстан.<br />
+          Декларация подлежит экспертизе в аттестованной организации, предоставляющей право разработки декларации.<br />
+          Эксплуатация опасного производственного объекта без декларации, зарегистрированной уполномоченным органом в области промышленной безопасности, запрещается.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-ninth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>- Подготовка полного пакета документации с целью получения аттестата на производство работ в области промышленной безопасности на территории Республики Казахстан</p>
+          <p>- Подготовка полного пакета документации с целью получения аттестата на право проведения технического обслуживания газопотребляющих систем</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-tenth">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Техническое обследование и освидетельствование грузоподъемных механизмов (краны и подъемники (вышки) всех типов и модификаций)), в том числе с целью продления сроков эксплуатации и разработка дубликатов паспортов на технические устройства</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Грузоподъемные краны и съемные грузозахватные приспособления до пуска в работу подвергаются полному техническому освидетельствованию. Грузоподъемным кранам, уже находящимся в работе, технические освидетельствования проводятся в следующие сроки:</p>
+          <ul>
+            <li>частичное – не реже одного раза в 12 месяц;</li>
+            <li>полное – не реже одного раза в 3 года</li>
+            <li>редко используемым грузоподъемным кранам полное техническое освидетельствование проводится не реже одного раза в 5 лет.</li>
+          </ul>
+          <p>Техническое освидетельствование кранов, отработавших нормативный срок службы, проводится после их обследования экспертной организацией.</p>
+          <p>Грузоподъемные краны, отработавшие нормативный срок службы, подвергаются специальному обследованию (диагностике) на предмет продления срока службы экспертными организациями.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-audit">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">План проведения занятий по курсу: теория и практика бухгалтерского учета + налогообложение +1С Бухгалтерия 8.3 </p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Основы бухгалтерского учета (типовой план счетов, составление проводок)</li>
+            <li>Определение остатка. Решение задач</li>
+            <li>Синтетические и аналитические счета</li>
+            <li>Ведение первичных документов (ПКО, РКО, командировочное удостоверение, авансовый отчет)</li>
+            <li>Начисление заработной платы. Учет налоговых обязательств (ИПН, социальные отчисления, социальный налог, начисление алиментов, отпускных, больничные листы)</li>
+            <li>Учет денежных средств (касса, банк)</li>
+            <li>Учет расчетов с физическими и юридическими лицами</li>
+            <li>Учет запасов</li>
+            <li>Учет основных средств и нематериальных активов</li>
+            <li>Определение дохода</li>
+            <li>Износ ОС</li>
+            <li>Инвентаризация</li>
+            <li>Учет инвестиций (обзор)</li>
+            <li>Бухгалтерский баланс</li>
+            <li>Налогобложение (100, 200, 300, 700, 910 формы)</li>
+            <li>1С Бухгалтерия 8.3</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-pto">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Инженер ПТО в строительстве</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Программа «Профессионал»</strong></p>
+          <p><strong>Продолжительность: </strong>20 часов</p>
+          <p><strong>Краткое описание курса:</strong></p>
+          <p>Миссия, цели и задачи ПТО в строительстве</p>
+          <p>Должностные обязанности инженера ПТО в строительстве</p>
+          <p>Взаимодействие ПТО с Заказчиком, Авторским и Техническим надзорами</p>
+          <p>Взаимодействие ПТО с другими подразделениями (ИТР, ОГС, ОМТС, ОТиЗ, ЮО)</p>
+          <p>Нормативно-технические акты РК в области строительства</p>
+          <p>Основные разделы ПСД, процедура получения и правила проверки ПСД</p>
+          <p>Процедура оформления, утверждения в производство работ и выдачи ПСД на объект</p>
+          <p>Процедура пересогласования и повторная выдача ПСД в процессе строительства</p>
+          <p>Основные этапы и последовательность этапов строительства</p>
+          <p>Состав Исходно-разрешительной и Технической документации объекта</p>
+          <p>Разделы и состав Исполнительной документации (ИД), реестр ИД</p>
+          <p>Понятие и виды Лимитно-заборных карт (ЛЗК) по заявкам, списанию, работам Прием-сдача Выполнения, состав документов, реестр выполнения</p>
+          <p>Понятие и виды Акта приемки выполненных работ (АВР) (формы 2Б и 2В</p>
+          <p>Понятие и назначение Справки объемов выполненных работ</p>
+          <p>Понятие и назначение Справки о стоимости выполненных работ и затрат</p>
+          <p>Понятие и виды Календарных графиков в строительстве</p>
+          <p>Правила составления Графика производства работ (ГПР)</p>
+          <p>Правила составления Графика движения рабочей силы (ГДР)</p>
+          <p>Правила составления Графика движения машин и механизмов (ГДМ)</p>
+          <p>Понятие Товарно-материальные ценности (ТМЦ), группы ТМЦ</p>
+          <p>Понятия Основные материалы и Расходные материалы (расходники)</p>
+          <p>Понятие Малоценные средства производства (малоценка) и СИЗ</p>
+          <p>Понятия Средства малой механизации, Инструменты, Спецоснастка, Инвентарь</p>
+          <p>Понятия и расчет Норм расхода основных и расходных материалов</p>
+          <p>Понятие и расчет Лимитов расхода малоценки, инструментов, инвентаря, СИЗ</p>
+          <p>Понятие и расчет требуемого объема и оборачиваемости спецоснастки</p>
+          <p>Понятия Заявка на закуп ТМЦ и Набор работ по объекту, составление заявки</p>
+          <p>Плановые и внеплановые заявки на закуп ТМЦ с учетом норм расхода и потерь</p>
+          <p>Понятие Списание ТМЦ, виды документов по списанию, составление и проверка М-29</p>
+          <p>Акт списания механизмов, малоценки, инструментов, спецоснастки, инвентаря, СИЗ</p>
+          <p>Понятия и формы Дефектного акта и Акта контрольного обмера, правила составления</p>
+          <p>Процедуры и состав документации при сдаче и вводе объекта в эксплуатацию</p>
+          <p>Понятия Коэффициент трудового участия (КТУ), область применения</p>
+          <p>Понятия Единица объема работ и Единица учета материалов, область применения</p>
+          <p>Правило десятичной запятой, порядок определения и область применения</p>
+          <p>Понятия Цена единицы работ и Коэффициент удорожания, область применения</p>
+          <p>Договор возмездного оказания услуг: основные разделы, область применения</p>
+          <p>Договор субподряда: виды, основные разделы, состав приложений</p>
+          <p>Договор поставки ТМЦ: виды, основные разделы, состав приложений</p>
+          <p>Договор аренды техники: виды, основные разделы, состав приложений</p>
+          <p>Проект производства работ (ППР), основные разделы, правила составления</p>
+          <p>Виды тендеров, электронные тендерные площадки, правила проведения и участия</p>
+          <p>Тендерные требования к поставщику, состав тендерной документации</p>
+          <p>Практическое занятие 1: разбор сметы, порядок расчета сметной стоимости</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-smeta">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Сметное дело. АВС4</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>План проведения занятий по курсам сметы, программы ABC-4</strong></p>
+          <ol>
+            <li>Теоретическая часть. Основные понятия</li>
+            <ul>
+              <li>Сметная стоимость строительства</li>
+              <ul>
+                <li>Объект строительства</li>
+                <li>Пусковой комплекс</li>
+                <li>Очередь строительства</li>
+                <li>Стройка</li>
+              </ul>
+            </ul>
+            <li>Основные принципы определения сметной стоимости строительства</li>
+            <li>Правила составления сметной документации</li>
+            <ul>
+              <li>Локальные сметы</li>
+              <li>Локальные сметные расчеты</li>
+              <li>Объектные сметы</li>
+              <li>Объектные сметные расчеты</li>
+              <li>Объектные сметы</li>
+              <li>Сводные сметные расчеты стоимости строительства</li>
+              <li>Состав сметной документации</li>
+              <li>Составление локальной сметы</li>
+              <ul>
+                <li>Работа по СНиР. Поиск нужного вида работы.</li>
+                <li>Расчет материалов. Расчет стоимости работы за одну единицу, расчет всего по количеству, расчет накладных расходов, затраты труда рабочих строителей и рабочих обслуживающих машины</li>
+                <li>Расчет прямых затрат</li>
+              </ul>
+              <li>Дополнительные затраты, расчет дополнительных затрат. Работа по сборникам Сметные затраты на строительство временных зданий и сооружений, сборник сметных норм дополнительных затрат при производстве строительно-монтажных работ в зимнее время. СН РК 8.02-07-2002 4.</li>
+            </ul>
+          </ol>
+          <p>Программа ABC-4</p>
+          <ul>
+            <li>Знакомство с главным меню</li>
+            <li>Список файлов</li>
+            <li>Знакомство с информационном обеспечением</li>
+            <li>Понятия форма 1, 3, 4, КС3, 2В</li>
+            <li>Составление локальной сметы</li>
+            <li>Работа со сметой в экранном редакторе</li>
+            <li>Работа с ресурсами а) удалить ресурс в) заменить ресурс с) добавить ресурс d)включить отдельной позицией e)присвоить метру f ) изменить стоимость материала</li>
+            <li>Числовые кодификаторы</li>
+            <li>Сводные сметные расчеты стоимости строительства</li>
+            <li>Акт выполненных работ</li>
+            <li>Подготовка работ к отчету</li>
+            <li>Контрольная итоговая работа по дефектному акту.</li>
+            <li>Ресурсный метод.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-construction">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Технология строительства</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Продолжительность: </strong>12 часов (6 занятия по 2 часа)</p>
+          <p><strong>Краткое описание курса:</strong></p>
+          <p>Основные разделы ПСД</p>
+          <p>Основные этапы и последовательность этапов строительства</p>
+          <p>Строительный генеральный план (СГП)</p>
+          <p>Производство подготовительных работ на объекте согласно СГП</p>
+          <ul>
+            <li>Подготовительные и земляные работы</li>
+            <li>Свайные фундаменты. Технология устройства</li>
+            <li>Монолитные и сборные фундаменты. Виды и технология устройства</li>
+            <li>Подвалы и цокольные этажи. Технология устройства</li>
+            <li>Конструктивные схемы зданий и сооружений</li>
+            <li>Технология устройства монолитных конструкций</li>
+            <li>Технология монтажа сборных железобетонных конструкций</li>
+            <li>Технология монтажа металлических конструкций</li>
+            <li>Технология устройства кирпичных конструкций</li>
+            <li>Технология устройства кровли. Виды кровли</li>
+            <li>Технология устройства полов. Виды полов</li>
+            <li>Технология устройства фасадов. Виды фасадов</li>
+            <li>Технология внутренних отделочных работ</li>
+            <li>Технология устройства подвесных потолков. Виды потолков</li>
+            <li>Наружные инженерные сети. Виды и технология монтажа</li>
+          </ul>
+          <p>Внутренние инженерные сети. Виды и технология монтажа</p>
+          <p>Благоустройство, озеленение и малые архитектурные формы (МАФы)</p>
+          <p>Техника безопасности при производстве СМР</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-tech">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Курс технический надзор</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Основы работы технического надзора и его должностные обязанности и функции.</strong>
+          <ol>
+            <li>Подготавливать исходно - разрешительную документацию</li>
+            <li>Оформлять и утверждать ПСД</li>
+            <li>Согласование и пересогласование рабочего проекта</li>
+            <li>Изучите общие требования СНиП РК к приемке выполненных СМР т.е. разбор нормативно-технические документы.</li>
+            <li>Изучите форму 2В ( акты по СМР), ЛЗК по выполненным работам, акты на промежуточные работы, акты на освидетельствование выполненных скрытых работ.</li>
+            <li>Научитесь заполнять отчетность технадзора, сдача и ввод в эксплуатацию законченного объекта.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-courses-antiterror">
+      <div class="modal-background" data-dismiss="modal"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-title">Курс по антитеррористической безопасности</p>
+          <button class="modal-close">
+            <i class="fa fa-close" data-dismiss="modal"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Закон "О противодействии терроризму РК от 13.07.1999 г. № 616-I</strong></p>
+          <p><strong>Программа обучения по антитеррористической безопасности</strong></p>
+          <ul>
+            <li>Основы антитеррористической защищенности объектов.</li>
+            <li>Правовые, нормативные и организационные основы противодействия терроризму.</li>
+            <li>Общественная опасность терроризма.</li>
+            <li>Обучение персонала объектов действиям при возникновении террористических угроз и иных преступных посягательств.</li>
+            <li>Планирование мероприятий антитеррористической защищенности объектов.</li>
+            <li>Мероприятия, осуществляемые органами управления при возникновении ЧС, связанные с угрозой, либо совершением террористических актов.</li>
+            <li>Обеспечение охраны объекта.</li>
+            <li>Меры инженерно-технической укреплённости объекта.</li>
+            <li>Взаимодействие частных охранных организаций с заказчиками охранных услуг по исполнению, соблюдению требований антитеррористической защищенности объектов, территорий и мест массового пребывания людей.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-blue modal-btn" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+    console.log("uecentr.kz")
+  </script>
 </body>
-    
